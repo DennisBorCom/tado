@@ -4,9 +4,9 @@
 
     class Tado {
 
-        public $username;
-        public $password; 
-        public $clientSecret;
+        private $username;
+        private $password; 
+        private $clientSecret;
 
         private $accessToken;
         private $user;
