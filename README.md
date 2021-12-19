@@ -8,6 +8,12 @@ Usage:
 $tado = new Tado('email', 'password', 'secret');
 </code>
 
+<br/>To find out if home mode is on:
+
+<code>
+$tado->isHome();
+</code>
+
 <br/>To get home information:
 
 <code>
