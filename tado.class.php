@@ -63,7 +63,7 @@
             $this->endManualHeating($zone);
         }
 
-        public function hotWaterOnFahrenheit(object $zone, float $temperature) : bool {
+        public function setHotWaterFahrenheit(object $zone, float $temperature) : bool {
             return $this->hotWaterOnCelcius($zone, $this->fahrenheitToCelcius($temperature));
         }
 
@@ -82,7 +82,7 @@
             return json_decode($output);
         }
 
-        public function hotWaterOnCelcius(object $zone, float $temperature) : bool {
+        public function setHotWaterCelcius(object $zone, float $temperature) : bool {
             if (!isset($zone->type)) {
                 throw new Exception('Tado: Invalid zone object');
             }
