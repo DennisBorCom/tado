@@ -1,5 +1,8 @@
 <?php
 
+    // created by Dennis Bor (dennis@dennisbor.com)
+    // download at https://github.com/DennisBorCom
+
     // to obtain secret, visit https://app.tado.com/env.js
 
     class Tado {
