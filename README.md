@@ -32,11 +32,18 @@ $tado->getZones();
 $zone = $tado->getZoneByName('Living Room');
 </code>
 
+<br/>To get zones by type:
+
+<code>$zones = $tado->getHeatingZones();</code><br/>
+<code>$zones = $tado->getHotWaterZones();</code><br/>
+
 <br/>To get zone details:
 
 <code>$tado->getHumidity($zone);</code><br/>
 <code>$tado->getTemperatureCelcius($zone);</code><br/>
 <code>$tado->getTemperatureFahrenheit($zone);</code><br/>
+<code>$tado->getOpenWindow($zone);</code><br/>
+<code>$tado->getHeatingPower($zone);</code><br/>
 
 <br/>To set zone temperature
 

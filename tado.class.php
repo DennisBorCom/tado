@@ -117,14 +117,22 @@
             return true;
         }
 
-        public function getHeatingZones() : array {
+        private function getZonesByType(string $type) : array {
             $filteredZones = array();
             foreach ($this->zones as $zone) {
-                if ($zone->type == 'HEATING') {
+                if ($zone->type == $type) {
                     array_push($filteredZones, $zone);
                 }
             }
             return $filteredZones;
+        }
+
+        public function getHotWaterZones() : array {
+            return $this->getZonesByType('HOT_WATER');
+        }
+
+        public function getHeatingZones() : array {
+            return $this->getZonesByType('HEATING');
         }
 
         public function getHeatingPower(object $zone) : float {
