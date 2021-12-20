@@ -1,7 +1,7 @@
 <?php
 
     // created by Dennis Bor (dennis@dennisbor.com)
-    // download at https://github.com/DennisBorCom
+    // download at https://github.com/DennisBorCom/tado
 
     // to obtain secret, visit https://app.tado.com/env.js
 
