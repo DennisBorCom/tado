@@ -57,9 +57,6 @@
         }
 
         public function endManualHotWater(object $zone) : void {
-            if (!isset($zone->id)) {
-                return;
-            }
             $this->endManualHeating($zone);
         }
 
